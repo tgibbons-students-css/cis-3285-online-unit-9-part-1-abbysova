@@ -1,2 +1,23 @@
 <log><type>INFO</type><message>  Connecting to Database</message></log> 
 <log><type>INFO</type><message>  Connecting to Database</message></log> 
+<log><type>INFO</type><message>  Connecting to Database</message></log> 
+<log><type>INFO</type><message>  0 trades processed</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'GBPUSD'</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'GBPJPY'</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'USDEUR'</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'USDCAD'</message></log> 
+<log><type>INFO</type><message>  Connecting to Database</message></log> 
+<log><type>INFO</type><message>  0 trades processed</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'GBPUSD;1000;1.51'</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'GBPJPY'</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'USDEUR'</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'USDCAD'</message></log> 
+<log><type>INFO</type><message>  Connecting to Database</message></log> 
+<log><type>INFO</type><message>  0 trades processed</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'GBPUSD'</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'GBPUSD'</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'GBPUSD'</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'GBPUSD'</message></log> 
+<log><type>WARN</type><message> Trade currencies on line 1 malformed: 'GBPUSD'</message></log> 
+<log><type>INFO</type><message>  Connecting to Database</message></log> 
+<log><type>INFO</type><message>  0 trades processed</message></log> 
