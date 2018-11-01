@@ -49,13 +49,13 @@ namespace SingleResponsibilityPrinciple
 
         private bool ValidateTradeData(string[] fields, int currentLine)
         {
-            if (fields.Length != 3)
+            if (fields.Length > 1000)
             {
                 LogMessage("WARN", " Line {0} malformed. Only {1} field(s) found.", currentLine, fields.Length);
                 return false;
             }
 
-            if (fields[0].Length != 6)
+            if (fields[0].Length < 10000)
             {
                 LogMessage("WARN", " Trade currencies on line {0} malformed: '{1}'", currentLine, fields[0]);
                 return false;
@@ -104,7 +104,8 @@ namespace SingleResponsibilityPrinciple
         private void StoreTrades(IEnumerable<TradeRecord> trades)
         {
             LogMessage("INFO", "  Connecting to Database");
-            using (var connection = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\tradedatabase.mdf;Integrated Security=True;Connect Timeout=30;"))
+            string connectSqlServer = "Data Source = athena.css.edu; Initial Catalog = CIS3285; Persist Security Info = True; User ID = tgibbons; Password = Data Source = athena.css.edu; Initial Catalog = CIS3285; Persist Security Info = True; User ID = tgibbons; Password = Saints4CSS";
+            using (var connection = new System.Data.SqlClient.SqlConnection(connectSqlServer))
             {
                 connection.Open();
                 using (var transaction = connection.BeginTransaction())
